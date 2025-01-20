@@ -4,21 +4,31 @@
 import PackageDescription
 
 let package = Package(
-    name: "Network",
+    name: "Networks",
+    platforms: [.macOS(.v10_15), .iOS(.v14), .watchOS(.v9)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Network",
-            targets: ["Network"]),
+            name: "Networks",
+            targets: ["Networks"]),
+    ],
+    dependencies: [
+        .package(path: "../MdlTransferHolder"),
+        .package(url: "https://github.com/Moya/Moya", from: "15.0.3"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Network"),
+            name: "Networks", dependencies: [
+                "Moya",
+               "MdlTransferHolder"
+            ]),
+        
         .testTarget(
-            name: "NetworkTests",
-            dependencies: ["Network"]
+            name: "NetworksTests",
+            dependencies: ["Networks"]
         ),
     ]
+    
 )
