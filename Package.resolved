@@ -1,0 +1,240 @@
+{
+  "originHash" : "1fc6aedb7bea63a9eb8294ce024232f619e936d422c9d73c408f86f6d64b7043",
+  "pins" : [
+    {
+      "identity" : "activelabel.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/optonaut/ActiveLabel.swift",
+      "state" : {
+        "revision" : "36949c1a69ef8b40574da20c9e24b115f387b1cf",
+        "version" : "1.1.5"
+      }
+    },
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "ea6a94b7dddffd0ca4d0f29252d95310b84dec84",
+        "version" : "5.10.0"
+      }
+    },
+    {
+      "identity" : "aloestackview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marlimox/AloeStackView",
+      "state" : {
+        "revision" : "28ef1e50cef1eb38512fae67eb45ddc508f9a9f8",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "attributedstringbuilder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SteveBarnegren/AttributedStringBuilder",
+      "state" : {
+        "revision" : "3872edbf39ec91ef49bb95a72d2825a63de19f5f",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "bottompopup",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ergunemr/BottomPopup",
+      "state" : {
+        "revision" : "23e3ce5ab9e1576aae60bad90cf7eea34709881d",
+        "version" : "0.7.1"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6d7c104cac017eb19f1ee869bd942b4cbc2e420f"
+      }
+    },
+    {
+      "identity" : "eureka",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/xmartlabs/Eureka",
+      "state" : {
+        "revision" : "028ef8e3191a256b8f6b8bb6b9496efcb0762dbc",
+        "version" : "5.5.0"
+      }
+    },
+    {
+      "identity" : "imagerow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/EurekaCommunity/ImageRow",
+      "state" : {
+        "revision" : "5682215c037bc5ff9b9b9ddb219f906f078e4c25",
+        "version" : "4.1.0"
+      }
+    },
+    {
+      "identity" : "inappsettingskit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/futuretap/InAppSettingsKit.git",
+      "state" : {
+        "revision" : "f1497ca5a93fe3a5c770fa5c51053e131151f827",
+        "version" : "3.7.3"
+      }
+    },
+    {
+      "identity" : "inject",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzysztofzablocki/Inject.git",
+      "state" : {
+        "revision" : "728c56639ecb3df441d51d5bc6747329afabcfc9",
+        "version" : "1.5.2"
+      }
+    },
+    {
+      "identity" : "joseswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airsidemobile/JOSESwift.git",
+      "state" : {
+        "revision" : "10ed3b6736def7c26eb87135466b1cb46ea7e37f",
+        "version" : "2.4.0"
+      }
+    },
+    {
+      "identity" : "lottie-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-spm.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b7f41dd0b33c61577a4f0c8dd3674e5933719da0"
+      }
+    },
+    {
+      "identity" : "moya",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Moya/Moya",
+      "state" : {
+        "revision" : "c263811c1f3dbf002be9bd83107f7cdc38992b26",
+        "version" : "15.0.3"
+      }
+    },
+    {
+      "identity" : "reactiveswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+      "state" : {
+        "revision" : "c43bae3dac73fdd3cb906bd5a1914686ca71ed3c",
+        "version" : "6.7.0"
+      }
+    },
+    {
+      "identity" : "resilientdecoding",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/ResilientDecoding.git",
+      "state" : {
+        "revision" : "19a780e60b81e85c934ccd0fe026b8f24cb4d141",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "c7c7d2cf50a3211fe2843f76869c698e4e417930",
+        "version" : "6.8.0"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "swift-asn1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-asn1.git",
+      "state" : {
+        "revision" : "7faebca1ea4f9aaf0cda1cef7c43aecd2311ddf6",
+        "version" : "1.3.0"
+      }
+    },
+    {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections.git",
+      "state" : {
+        "revision" : "671108c96644956dddcd89dd59c203dcdb36cec7",
+        "version" : "1.1.4"
+      }
+    },
+    {
+      "identity" : "swift-crypto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-crypto.git",
+      "state" : {
+        "revision" : "21f7878f2b39d46fd8ba2b06459ccb431cdf876c",
+        "version" : "3.8.1"
+      }
+    },
+    {
+      "identity" : "swift_qrcodejs",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ApolloZhu/swift_qrcodejs.git",
+      "state" : {
+        "revision" : "374dc7f7b9e76c6aeb393f6a84590c6d387e1ecb",
+        "version" : "2.2.2"
+      }
+    },
+    {
+      "identity" : "swiftcbor",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/niscy-eudiw/SwiftCBOR.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "2c8c55273d4c4aae21bb46c2afbae79ee072eff4"
+      }
+    },
+    {
+      "identity" : "swiftotp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lachlanbell/SwiftOTP.git",
+      "state" : {
+        "revision" : "9660551ea3df153c3cbacfa34ac3abbec73a8b84",
+        "version" : "3.0.2"
+      }
+    },
+    {
+      "identity" : "swinject",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Swinject/Swinject.git",
+      "state" : {
+        "revision" : "be9dbcc7b86811bc131539a20c6f9c2d3e56919f",
+        "version" : "2.9.1"
+      }
+    },
+    {
+      "identity" : "swinjectstoryboard",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Swinject/SwinjectStoryboard.git",
+      "state" : {
+        "revision" : "e4498ce2dfe37e1ca9d2d20af06fcc087507561c",
+        "version" : "2.2.3"
+      }
+    },
+    {
+      "identity" : "viewrow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/EurekaCommunity/ViewRow.git",
+      "state" : {
+        "revision" : "3428a3b825a5641ae7fb65f3f787aba2b1b4dab9",
+        "version" : "0.9.0"
+      }
+    }
+  ],
+  "version" : 3
+}
