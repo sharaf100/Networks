@@ -32,7 +32,7 @@ class DeviceEngagementPresentation {
     ) {
         let loader = MDLCitizenClient.shared as MdlDataLoader
         let algorithm = UserDefaults.standard.integer(forKey: DefaultKeys.holderAlgorithm.rawValue)
-        let deviceEngagment = DeviceEngagement(ofType: TransactionTypeEnum.qrBLE, alg: algorithm)
+        let deviceEngagment = DeviceEngagement(ofType: TransactionTypeEnum.qrWebApi, alg: 1)
         let webApiViewModel = MDLHolderQrWebApiVM(loader: loader, de: deviceEngagment)
         mdlHolderViewModel = MDLHolderQrAllVM(loader: loader, de: deviceEngagment, vmWebApi: webApiViewModel)
         mdlHolderViewModel.shareType = shareType

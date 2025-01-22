@@ -9,7 +9,7 @@ import Foundation
 public struct SessionResponse: Codable {
     public let totpSecretKey, data, customerId: String
 
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case totpSecretKey = "TotpSecretKey"
         case data = "Data"
         case customerId = "CustomerId"

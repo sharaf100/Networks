@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
-        "revision" : "ea6a94b7dddffd0ca4d0f29252d95310b84dec84",
-        "version" : "5.10.0"
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
       }
     },
     {
@@ -35,6 +35,15 @@
       "state" : {
         "revision" : "3872edbf39ec91ef49bb95a72d2825a63de19f5f",
         "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "bonmot",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Rightpoint/BonMot.git",
+      "state" : {
+        "revision" : "001139aad601ed8009b49a0e868e21df3dea979c",
+        "version" : "6.1.3"
       }
     },
     {

@@ -63,6 +63,7 @@ public class OnlineSharing {
             let pair = try res.extractLicenceDto()
             MDLCitizenClient.shared.licenseDto = pair.licenceDto
             MDLCitizenClient.shared.mdlResp = pair.mDLResponse
+            let documentDiscriminator = pair.licenceDto.DocumentDiscriminator.value
             let xKey = privateKey[-2]
             let yKey = privateKey[-3]
             let dKey = privateKey[-4]
@@ -101,24 +102,62 @@ public class OnlineSharing {
         }
     }
     
+    
     public func setKeys(data: Data) {
-        UserDefault.shared.setKeys(keys: data)
+        let keyChain = Keychain()
+        do {
+            try keyChain.set(data, key: "signupKeys")
+        } catch let error {
+            print(error)
+        }
     }
     
     public func setKeys(dictionary: NSDictionary) {
-      //  UserDefault.shared.setKeys(dictionary: dictionary)
+//        UserDefault.shared.setKeys(dictionary: dictionary)
+        let x = dictionary[-2] as! String
+        let y = dictionary[-3]  as! String
+        let d = dictionary[-4]  as! String
+        let dic = CoseKey(x: x, y: y, d: d)
+        let data = CBOR.encode(dic.keyParams)!.data!
+        setKeys(data: data)
     }
+    
+    public func saveKeys(dictionary: NSDictionary) {
+//        UserDefault.shared.setKeys(dictionary: dictionary)
+        let x = dictionary[-2] as! NSByteString
+        let y = dictionary[-3] as! NSByteString
+        let d = dictionary[-4] as! NSByteString
+        let xData = x.stringValue()
+        let yData = y.stringValue()
+        let dData = d.stringValue()
+        
+        let dic = CoseKey(x: xData, y: yData, d: dData)
+        let data = CBOR.encode(dic.keyParams)!.data!
+        setKeys(data: data)
+    }
+    
     
     public func loadKeys()-> NSDictionary? {
-        return Helpers.getDevicePrivateKeyObject()
+        let keychain = Keychain()
+        do {
+            guard let keys = try keychain.getData("signupKeys") else { return nil }
+            guard  let nsObject = CBOR.decode(keys.arr) else { return nil }
+            let coseKey = CoseKey(decoded: nsObject)
+            return coseKey?.keyParams
+        } catch let error {
+            onError.send(error.localizedDescription)
+            return nil
+        }
     }
     
-    public func removeKeys() {
+    public func removeKeys() -> Bool {
         let keychain = Keychain()
         do {
             try keychain.remove("signupKeys")
+            return true
         } catch let error {
             print("Error\(error.localizedDescription)")
+            return false
         }
     }
     
